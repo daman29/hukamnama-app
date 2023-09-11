@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "gurakhar";
+  src: url("./assets/GURAKHAR.TTF");
+}
+
+html,
+body {
+  @apply h-full w-full bg-ussa-yellow-100;
+}
