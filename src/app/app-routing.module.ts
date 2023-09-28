@@ -10,6 +10,14 @@ const routes: Routes = [
         (mod) => mod.HukamnamaPageComponent
       ),
   },
+  {
+    title: 'Hukamnama',
+    path: 'hukamnama',
+    loadComponent: () =>
+      import('./components/shabad-page/shabad-page.component').then(
+        (mod) => mod.ShabadPageComponent
+      ),
+  },
 ];
 
 @NgModule({
