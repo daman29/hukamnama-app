@@ -12,19 +12,38 @@ export interface Navigation {
 }
 
 export interface Set {
-    gurmukhi: string,
-    unicode: string
+    gurmukhi: string | null,
+    unicode: string | null
 }
 
 export interface Translation {
     en: {
-        bdb: string
+        bdb?: string,
+        ms?: string,
+        ssk?: string
+    },
+    pu: {
+        ss?: Set,
+        ft?: Set,
+        bdb?: Set,
+        ms?: Set
+    },
+    es: {
+        sn?: string
+    },
+    hi: {
+        ss?: string,
+        sts?: string
     }
 }
 
 export interface Transliteration {
-    english: string,
-    en: string
+    english?: string,
+    en?: string,
+    hindi?:string,
+    hi?:string,
+    ipa?:string,
+    ur?:string
 }
 
 export interface Line {
